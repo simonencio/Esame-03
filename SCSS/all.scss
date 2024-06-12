@@ -1,0 +1,330 @@
+// CSS PAGINA INTERA
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+// CSS BODY
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF;
+    --color2: #181818;
+  }
+  
+  
+  
+  // CSS MENU
+  nav{
+    opacity: 0.8;
+  }
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 10px 30px;
+  }
+  .logo img {
+    width: 40px;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu li {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+  }
+  
+  .menu li a:hover::after {
+    width: 100%;
+  }
+  
+  .open-menu,
+  .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  
+  .open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  
+  .close-menu {
+    top: 20px;
+    right: 20px;
+  }
+  
+  #check {
+    display: none;
+  }
+  // CSS SFONDO
+  
+  .sfondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    opacity: 0.9;
+}
+  // CSS HEADER
+  div.intro {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 70px;
+      margin-bottom: 70px;
+  
+      h1 {
+        font-size: 2em;
+        color: #800080;
+      }
+    }
+    main {
+        // CSS MAIN-TITLE
+        div.title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #800080;
+            
+            font-size: 25px;
+          }
+    }
+    footer {
+        background-color: #333;
+        color: #ccc;
+        text-decoration: none;
+      
+        a {
+          background-color: #333;
+          color: #ccc;
+          text-decoration: none;
+      
+          &:hover {
+            color: #ff9900;
+            text-decoration: underline;
+          }
+        }
+      
+        ul {
+          list-style: none;
+      
+          li {
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+      
+        .rigaFooter {
+          display: flex;
+          flex-direction: row;
+        }
+      
+        footer div {
+          padding: 0 0 20px 0;
+      
+          p {
+            color: #999;
+          }
+      
+        }
+      
+        .colonnaFooter {
+          width: 50%;
+          margin-top: 20px;
+      
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      @media(max-width: 450px) {
+  
+        // CSS-MEDIA-PHONE-MENU
+        nav{
+          opacity: 1;
+        }
+        .nav-bar2 {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          position: relative;
+          background-color: var(--color2);
+          padding: 20px 30px;
+        }
+        .nav-bar {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .menu {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          z-index: 100;
+          background-color: var(--color2);
+          transition: all 0.2s ease-in-out;
+        }
+      
+        .menu li {
+          margin-top: 20px;
+        }
+      
+        .menu li a {
+          padding: 10px;
+        }
+      
+        .open-menu,
+        .close-menu {
+          display: block;
+        }
+      
+        #check:checked~.menu {
+          right: 0;
+        }
+      
+        // CSS-MEDIA-PHONE-HEADER
+        header div.intro {
+          font-size: 20px;
+          margin-top: 75px;
+          margin-bottom: 60px;
+        }
+      // CSS-MEDIA-PHONE-MAIN-TITLE
+      main div.title {
+        font-size: 15px;
+        margin-top: 0;
+      }
+      // CSS-MEDIA-PHONE-FOOTER
+footer .rigaFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .colonnaFooter {
+  margin-bottom: 20px;
+}
+    }
+    @media (min-width: 500px) and (max-width: 768px) {
+      // CSS-MEDIA-PHONE-MENU
+      nav{
+        opacity: 1;
+      }
+      .nav-bar2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        background-color: var(--color2);
+        padding: 20px 30px;
+      }
+      .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .menu li {
+        margin-top: 20px;
+      }
+      
+      .menu li a {
+        padding: 10px;
+      }
+      
+      .open-menu,
+      .close-menu {
+        display: block;
+      }
+      
+      #check:checked~.menu {
+        right: 0;
+      }
+      // CSS-MEDIA-PHONE-HEADER
+      header div.intro {
+        font-size: 30px;
+        margin-top: 75px;
+        margin-bottom: 100px;
+      }
+      // CSS-MEDIA-PHONE-MAIN-TITLE
+      main div.title {
+      font-size: 25px;
+      margin-top: 0;
+      }
+      // CSS-MEDIA-PHONE-FOOTER
+footer .rigaFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .colonnaFooter {
+  margin-bottom: 20px;
+}
+
+    }

@@ -1,0 +1,224 @@
+header{
+div.banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  background-color: #800080;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 100px;
+    li{
+      margin: 15px;
+      list-style: none;
+    }
+    h2{
+      font-size: 40px;
+      color: red;
+    }
+    p{
+      font-size: 30px;
+    }
+}
+
+
+div.banner button {
+  background-color: black;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 15px;
+}
+
+div.banner button:hover {
+  background-color: black;
+   opacity: 0.8;
+}
+}
+main {
+      div.Home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    
+        a{
+        margin: 25px;
+        margin-top: 50px;
+        } 
+      img{
+      width: 350px;
+      height: 200px;
+      border: 5px solid #800080;
+      border-radius: 10px;
+        
+        &:hover{
+        border: 3px solid #800080;
+        opacity: 0.5;
+        }
+      }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        h4{
+            font-size: 30px;
+            color:#800080;
+            
+        }
+        }
+    }
+}
+// CSS-MEDIA-PHONE-MAIN-INDEX
+
+@media(max-width: 450px) {
+  header{
+    div.banner {
+      width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-color: #800080;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border-radius: 20px;
+        margin-top: 50px;
+        li{
+          margin: 15px;
+          list-style: none;
+        }
+        h2{
+          font-size: 30px;
+          color: red;
+        }
+        p{
+          font-size: 20px;
+        }
+    }
+    
+    
+    div.banner button {
+      background-color: black;
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 15px;
+    }
+    
+    div.banner button:hover {
+      background-color: black;
+       opacity: 0.8;
+    }
+    }
+main div.Home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div.Home img {
+  width: 300px;
+  height: 150px;
+}
+main div.Home .card  h4{
+  font-size: 25px;
+}
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  // CSS-MEDIA-PHONE-MAIN-INDEX
+  header{
+    div.banner {
+      width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-color: #800080;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        border-radius: 20px;
+        margin-top: 50px;
+        li{
+          margin: 15px;
+          list-style: none;
+        }
+        h2{
+          font-size: 30px;
+          color: red;
+        }
+        p{
+          font-size: 20px;
+        }
+    }
+    
+    
+    div.banner button {
+      background-color: black;
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 15px;
+    }
+    
+    div.banner button:hover {
+      background-color: black;
+       opacity: 0.8;
+    }
+    }
+main div.Home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div.Home img {
+  width: 500px;
+  height: 250px;
+  margin-top: 30px;
+}
+main div.Home .card  h4{
+  font-size: 35px;
+}}
